@@ -1823,7 +1823,7 @@ function bindReadLinks(root){ root.querySelectorAll("[data-read]").forEach(b => 
 let LEARN = null, LS = null;
 const LEARN_DECK = { aqeedah:["fard_aqeedah"], fiqh:["fard_tahara","fard_salah","fard_sawm","fard_zakat"] };
 const OLD_TOPIC = { belief:"aqeedah", purity:"fiqh", prayer:"fiqh", fasting:"fiqh", zakat:"fiqh", heart:"tazkiyah" };
-async function loadLearn(){ if (LEARN && LEARN.length) return LEARN; try { LEARN = await fetchJSON("data/learn.json?v=ac64729a"); } catch(e){ try { LEARN = await fetchJSON("data/learn.json"); } catch(e2){ LEARN = []; toast(navigator.onLine ? "Couldn't load the lessons. Pull down or reopen the app to try again." : "You're offline and the lessons aren't saved yet. Connect once to save them for offline use."); return []; } } return LEARN; }
+async function loadLearn(){ if (LEARN && LEARN.length) return LEARN; try { LEARN = await fetchJSON("data/learn.json?v=0aca46c5"); } catch(e){ try { LEARN = await fetchJSON("data/learn.json"); } catch(e2){ LEARN = []; toast(navigator.onLine ? "Couldn't load the lessons. Pull down or reopen the app to try again." : "You're offline and the lessons aren't saved yet. Connect once to save them for offline use."); return []; } } return LEARN; }
 const learnDone = id => !!(S.learn||{})[id];
 function nextLearn(){ for (const u of LEARN||[]) for (let k = 0; k < u.lessons.length; k++) if (!learnDone(u.lessons[k].id)) return { u, k }; return null; }
 function learnHome(){
@@ -7144,5 +7144,5 @@ function bindQuran(app){
 }
 
 </script>
-<script>if("serviceWorker" in navigator && /github\.io$/.test(location.hostname)) navigator.serviceWorker.register("sw.js?v=7ec76a30ab");</script></body>
+<script>if("serviceWorker" in navigator && /github\.io$/.test(location.hostname)) navigator.serviceWorker.register("sw.js?v=730f18ac87");</script></body>
 </html>
