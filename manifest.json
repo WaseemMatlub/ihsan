@@ -1,1 +1,36 @@
-{"name": "Dār aṣ-Ṣiddīq al-Akbar", "short_name": "Dār aṣ-Ṣiddīq", "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#FFFFFF", "theme_color": "#0E5A43", "description": "Train in the Islamic sciences year by year through the classical texts.", "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]}
+{
+ "name": "Dār aṣ-Ṣiddīq al-Akbar",
+ "short_name": "Dār aṣ-Ṣiddīq",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#FFFFFF",
+ "theme_color": "#0E5A43",
+ "description": "Train in the Islamic sciences year by year through the classical texts.",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
