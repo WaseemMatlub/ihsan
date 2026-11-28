@@ -1002,6 +1002,65 @@ bdi.saw.saw-long{white-space:normal;display:inline;line-height:1.9;font-size:1.1
 .logo-img{width:100%;height:auto;display:block;border-radius:50%}.brandmark .logo-img{width:30px;height:30px;flex:none}
 .ob-logo{width:132px;margin:8px auto 14px;filter:drop-shadow(0 6px 16px rgba(0,0,0,.18))}
 
+/* ---- the Qur'an ---- */
+.qwrap{min-height:100vh;background:var(--soft)}
+.q-top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:6px;padding:8px 10px;background:var(--surface);border-bottom:1px solid var(--line)}
+.q-top .x{flex:none}
+.q-title{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;background:none;border:0;padding:4px 6px;color:var(--ink);text-align:left;cursor:pointer}
+.q-title b{font-size:1.02rem}.q-title span{font-size:.78rem;color:var(--muted)}
+.q-tools{display:flex;gap:4px}
+.q-tb{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.q-tb.on{background:color-mix(in srgb,var(--brand) 14%,var(--surface));border-color:var(--brand);color:var(--brand)}
+.q-tb.main{width:46px;height:46px;border-radius:50%;background:var(--brand);color:#fff;border-color:var(--brand)}
+.q-page{max-width:760px;margin:12px auto 0;background:#FDF9EE;color:#1b1b1b;border-radius:6px;padding:18px 16px 22px;position:relative;
+  border:3px solid #1E5B3A;box-shadow:0 0 0 4px #FDF9EE,0 0 0 6px #C9A227,0 0 0 10px #1E5B3A,0 6px 22px rgba(0,0,0,.12)}
+[data-theme=dark] .q-page{background:#191B17;color:#ECE6D6;box-shadow:0 0 0 4px #191B17,0 0 0 6px #8C7420,0 0 0 10px #1E5B3A}
+.q-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:2px 0 4px;padding:6px 12px;border-radius:999px;
+  background:linear-gradient(90deg,#1E5B3A,#2F7A4F 50%,#1E5B3A);color:#F6E7B4;border:2px solid #C9A227}
+.q-head-t{font-family:"IndoPak","Amiri",serif;font-size:1.5rem;line-height:1.6}
+.q-head-n{display:inline-grid;place-items:center;min-width:34px;height:34px;border-radius:50%;border:1.5px solid #C9A227;font-family:"Amiri",serif;font-size:1rem}
+.q-sub{text-align:center;font-size:.8rem;color:#6b6252;margin:6px 0 10px}[data-theme=dark] .q-sub{color:#a99f88}
+.q-basm{text-align:center;font-family:"IndoPak","Amiri",serif;font-size:1.7em;margin:4px 0 10px;line-height:2}
+.q-text{font-family:"IndoPak","Amiri",serif;text-align:justify;text-align-last:center;word-spacing:.05em}
+.q-size-1 .q-text,.q-size-1 .q-ar{font-size:1.45rem;line-height:2.35}.q-size-2 .q-text,.q-size-2 .q-ar{font-size:1.75rem;line-height:2.4}
+.q-size-3 .q-text,.q-size-3 .q-ar{font-size:2.1rem;line-height:2.45}.q-size-4 .q-text,.q-size-4 .q-ar{font-size:2.5rem;line-height:2.5}
+.qa{cursor:pointer;border-radius:6px;transition:background .15s}
+.qa:hover{background:rgba(201,162,39,.12)}.qa.sel{background:rgba(201,162,39,.28)}.qa.playing{background:rgba(46,158,70,.2)}
+.qa.bm .q-end{background:#C9A227;color:#fff}
+.q-end{display:inline-grid;place-items:center;min-width:1.25em;height:1.25em;padding:0 .12em;border-radius:50%;border:1.5px solid #1E5B3A;font-family:"Amiri",serif;font-size:.55em;line-height:1;vertical-align:.25em;margin:0 .15em;color:#1E5B3A}
+[data-theme=dark] .q-end{border-color:#8FCB9F;color:#8FCB9F}
+.q-ruku{font-family:"Amiri",serif;font-size:.5em;color:#9a7b12;vertical-align:.9em;margin:0 .1em}.q-sajda{color:#9a7b12;font-size:.8em;margin:0 .1em}
+.q-page.tr{padding:14px 14px 22px}.q-row{padding:10px 4px;border-bottom:1px solid rgba(0,0,0,.08);cursor:pointer}.q-row.playing{background:rgba(46,158,70,.12)}
+.q-ar{font-family:"IndoPak","Amiri",serif;text-align:right;margin:0 0 6px}.q-en{margin:0;font-size:.98rem;line-height:1.6;color:inherit}.q-en b{color:#1E5B3A;margin-right:4px}
+[data-theme=dark] .q-row{border-color:rgba(255,255,255,.08)}[data-theme=dark] .q-en b{color:#8FCB9F}
+.q-legend-btn{display:flex;align-items:center;gap:8px;margin:16px auto 0;background:none;border:1px solid rgba(0,0,0,.15);border-radius:999px;padding:6px 14px;color:inherit;font-size:.85rem;cursor:pointer}
+.q-cr{text-align:center;font-size:.72rem;color:#7a705c;margin:12px 0 0}
+.q-nav{max-width:760px;margin:20px auto 0;padding:0 12px 120px;display:flex;justify-content:space-between;gap:10px}.q-nav .btn{width:auto}
+.q-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -4px 18px rgba(0,0,0,.08)}
+.q-bar-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:6px}
+.q-rec{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;background:none;border:0;color:var(--ink);text-align:left;cursor:pointer;padding:2px 4px}
+.q-rec span{font-size:.76rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.q-sheet{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.38);display:flex;align-items:flex-end;justify-content:center}
+.q-sheet-in{position:relative;width:100%;max-width:620px;max-height:86vh;overflow:auto;background:var(--surface);border-radius:18px 18px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+.q-sheet-in h2{margin:0 0 10px;font-size:1.15rem}.q-sheet-x{position:absolute;top:10px;right:10px}
+.q-sheet-k{margin:0 0 6px;font-weight:700;color:var(--brand)}.q-sheet-ar{font-family:"IndoPak","Amiri",serif;font-size:1.6rem;line-height:2.3;margin:0 0 6px;text-align:right}
+.q-sheet-en{margin:0 0 12px;line-height:1.6}
+.q-sheet .item svg{flex:none;margin-right:6px;color:var(--brand)}
+.q-find{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;margin:10px 0}
+.q-num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--soft);font-weight:700;font-size:.85rem;margin-right:10px;flex:none}
+.q-si-ar{font-family:"IndoPak","Amiri",serif;font-size:1.2rem;margin-left:8px}
+.q-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.q-cell{display:flex;flex-direction:column;gap:2px;padding:10px 6px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.q-cell b{font-size:1.1rem}.q-cell span{font-size:.72rem;color:var(--muted)}
+.q-leg{display:grid;gap:10px}.q-leg-row{display:flex;gap:10px;align-items:flex-start}.q-leg-row p{margin:2px 0 0;font-size:.88rem;line-height:1.5}
+.q-leg-dot{flex:none;width:16px;height:16px;border-radius:50%;margin-top:3px}
+.tj-ghunna{color:#E07B00}.tj-ikhfa{color:#1C7FB0}.tj-idgham{color:#2E9E46}.tj-iqlab{color:#7B4FC9}.tj-ikhfa-m{color:#D0287A}.tj-idgham-m{color:#0E8F86}.tj-qalqala{color:#D32F2F}
+.tj-ghunna-bg{background:#E07B00}.tj-ikhfa-bg{background:#1C7FB0}.tj-idgham-bg{background:#2E9E46}.tj-iqlab-bg{background:#7B4FC9}.tj-ikhfa-m-bg{background:#D0287A}.tj-idgham-m-bg{background:#0E8F86}.tj-qalqala-bg{background:#D32F2F}
+[data-theme=dark] .tj-ghunna{color:#FFA94D}[data-theme=dark] .tj-ikhfa{color:#5FC3F0}[data-theme=dark] .tj-idgham{color:#6BD37F}[data-theme=dark] .tj-iqlab{color:#B595F5}[data-theme=dark] .tj-ikhfa-m{color:#F27CB5}[data-theme=dark] .tj-idgham-m{color:#4FD1C5}[data-theme=dark] .tj-qalqala{color:#FF7A7A}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .q-page{background:#191B17;color:#ECE6D6;box-shadow:0 0 0 4px #191B17,0 0 0 6px #8C7420,0 0 0 10px #1E5B3A}:root:not([data-theme=light]) .q-sub{color:#a99f88}:root:not([data-theme=light]) .q-end{border-color:#8FCB9F;color:#8FCB9F}:root:not([data-theme=light]) .q-row{border-color:rgba(255,255,255,.08)}:root:not([data-theme=light]) .q-en b{color:#8FCB9F}:root:not([data-theme=light]) .tj-ghunna{color:#FFA94D}:root:not([data-theme=light]) .tj-ikhfa{color:#5FC3F0}:root:not([data-theme=light]) .tj-idgham{color:#6BD37F}:root:not([data-theme=light]) .tj-iqlab{color:#B595F5}:root:not([data-theme=light]) .tj-ikhfa-m{color:#F27CB5}:root:not([data-theme=light]) .tj-idgham-m{color:#4FD1C5}:root:not([data-theme=light]) .tj-qalqala{color:#FF7A7A}}
+.bw-goal{margin:0 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.bw-goal input[type=range]{width:100%;margin-top:10px;accent-color:var(--brand)}.bw-deck{margin-top:14px}
+.q-alt{font-size:.42em;vertical-align:.35em;color:#1E5B3A;margin:0 .05em}
+
 .seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--line);padding:4px;border-radius:14px}
 .seg button{border:0;background:transparent;border-radius:10px;padding:10px 6px;font:inherit;font-weight:700;color:var(--muted);cursor:pointer}
 .seg button.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
@@ -1476,10 +1535,21 @@ async function saveOffline(n, btn){
   S.offline = { ...(S.offline||{}), [n]: Date.now() }; save(); st.textContent = "Saved. Year " + n + " now works without internet."; btn.textContent = "Update";
 }
 function touchDay(xp){ if (S.lb && S.lb.on) S.lb.pending = (S.lb.pending||0) + xp; setTimeout(() => lbSubmit(), 1500);
- const t = today(), adv = S.lastDay !== t; if (adv) S.streak = (S.lastDay === t-1) ? S.streak + 1 : 1; S.lastDay = t; S.xp += xp; S.days[t] = (S.days[t]||0) + xp; save(); if (adv) remindProgress(); return adv; }
-if (S.lastDay !== null && today() - S.lastDay > 1) { S.streak = 0; save(); }
-// a streak only lives while you study every day: miss a whole day and it is back to 0, even if the app stayed open
-const liveStreak = () => (S.lastDay !== null && today() - S.lastDay <= 1) ? S.streak : 0;
+ const t = today(), adv = S.lastDay !== t;
+ if (adv) { if (S.lastDay === t-1) S.streak++;
+   else if (S.lastDay === t-2 && S.streak && S.frozeWk !== weekId(t)) { S.frozeWk = weekId(t); S.streak++; setTimeout(() => toast("Streak kept: one missed day each week is forgiven."), 600); }
+   else S.streak = 1; }
+ S.lastDay = t; S.xp += xp; S.days[t] = (S.days[t]||0) + xp; save(); if (adv) remindProgress(); return adv; }
+function weekId(t){ return Math.floor((t + 3) / 7); }
+const streakGap = () => S.lastDay === null ? 99 : today() - S.lastDay;
+if (streakGap() > 2 || (streakGap() === 2 && S.frozeWk === weekId(today()))) { if (S.streak) { S.streak = 0; save(); } }
+// a streak lives while you do something each day; one missed day a week is forgiven
+const liveStreak = () => { const g = streakGap(); return g <= 1 || (g === 2 && S.frozeWk !== weekId(today())) ? S.streak : 0; };
+// a minute with the Qur'an, a book, du'as, salawat or dhikr keeps the streak, as well as lessons and flashcards
+const STREAK_VIEWS = new Set(["quran", "read", "duas", "guide", "story", "dalail", "salawat", "tasbih", "qaida", "stories", "unit"]);
+let _stT = null;
+function streakTimer(){ clearTimeout(_stT); if (streakToday() || !STREAK_VIEWS.has(view.name)) return; const v = view.name;
+  _stT = setTimeout(() => { if (view.name === v && !streakToday() && document.visibilityState === "visible") { touchDay(1); toast(`Day ${S.streak} of your streak. May Allah make it constant.`); if (typeof appBadge === "function") appBadge(); } }, 45000); }
 const streakToday = () => S.lastDay === today();
 
 /* ======================= SPACED REPETITION ======================= */
@@ -2216,6 +2286,8 @@ function milestones(){
     ["A thousand salawat", "Send 1,000 salawat on the Prophet ﷺ", sal, 1000, ["masjid", "dome", "dusk", 0]],
     ["Remembrance", "Count 10,000 dhikr on the tasbih", tb, 10000, ["home", "beads", "day", 0]],
     ["Storyteller", "Read 20 stories", stories, 20, ["desert", "camel", "dusk", 0]],
+    ["Guide to good", "Share the app with someone", S.shared || 0, 1, ["courtyard", "lanternFloor", "dusk", 0]],
+    ["Reciter", "Listen to or read 100 verses of the Qur'an", (S.qr && S.qr.n) || 0, 100, ["study", "mushafClosed", "dawn", 0]],
     ["Course complete", "Pass a course test", courses, 1, ["courtyard", "lanternFloor", "night", 0]],
     ["Student", "Finish 25 lessons", lessons, 25, ["study", "books", "day", 0]],
     ["Firm foundations", "Finish 100 lessons", lessons, 100, ["masjid", "mihrab", "dawn", 0]],
@@ -2241,6 +2313,7 @@ function profileView(){
     <section class="pg-hero"><div class="pg-lv">${ringSVG((xp - lo) / (hi - lo), 92, "#E9C46A", lv, "Level")}</div>
       <div class="pg-hero-t"><span class="pg-xp"><b>${xp.toLocaleString()}</b> XP</span><span class="pg-next">${(hi - xp).toLocaleString()} XP to level ${lv + 1}</span>
         <div class="pg-streak">${ICON.flame.replace("<svg", '<svg width="18" height="18"')}<b>${liveStreak()}</b>&nbsp;day streak<span class="pg-best">Best: ${bestStreak()}</span></div></div></section>
+    <details class="card pad pg-sec pg-how"><summary><b>What keeps your streak?</b></summary><p class="small" style="margin:8px 0 0">Do something for your deen each day: a lesson, your flashcards, or a minute with the Qur'an, a book, the du'as, salawat or the tasbih. ${streakToday() ? "Today is done, alhamdulillah." : "Nothing yet today."} One missed day each week is forgiven, so a busy day won't break it.</p></details>
     <section class="card pad pg-sec"><div class="pg-h"><h2>This week</h2></div>${weekStrip()}
       <div class="pg-stats">${stat(wkDays + "/7", "days active")}${stat(wkLessons, wkLessons === 1 ? "lesson" : "lessons")}${stat(wkXP, "XP earned")}</div></section>
     ${basicsProgress()}
@@ -2517,7 +2590,8 @@ function rootsOf(w){                                   // rough guesses at the t
   for (let x of stems(w)) {
     const m = x.match(/^(است|مست|ان|ت|م|ي|ن|ا)/); if (m && x.length - m[0].length >= 3) x = x.slice(m[0].length);
     const core = x.length > 3 ? x[0] + x.slice(1,-1).replace(/[اوي]/g,"") + x.slice(-1) : x;
-    if (core.length === 3) out.add(core); if (core.length === 2) out.add(core + core[1]);
+    if (core.length === 3) { out.add(core); if (/[يى]$/.test(core)) out.add(core.slice(0, 2) + "و"); if (/ا$/.test(core)) { out.add(core.slice(0, 2) + "و"); out.add(core.slice(0, 2) + "ي"); } }
+    if (core.length === 2) out.add(core + core[1]);
     if (core.length === 4 && core[1] === "ت") out.add(core[0] + core.slice(2));          // ifta'ala
   }
   return [...out];
@@ -3043,7 +3117,7 @@ function checkUnlock(){
   const n = recYear(); if (n >= YEARS.length || !loaded(yearOf(n))) return;
   const y = yearOf(n); if (y.prepared && yearStatus(y).open) { S.recYear = n + 1; if (!S.unlocked.includes(n+1)) S.unlocked.push(n+1); save(); setTimeout(() => toast(`Well done. Year ${n+1} is recommended next`), 400); }
 }
-function render(){ appBadge(); checkUnlock(); if (typeof hlHideBar === "function") hlHideBar();
+function render(){ appBadge(); checkUnlock(); streakTimer(); if (typeof hlHideBar === "function") hlHideBar();
   const app = $("#app");
   if (!S.welcomed){ app.innerHTML = welcomeView(); bindWelcome(); return; }
   if (view.name === "home") app.innerHTML = homeView();
@@ -3169,8 +3243,9 @@ try { navigator.storage && navigator.storage.persist && navigator.storage.persis
 const APP_URL = "https://waseemmatlub.github.io/ihsan/";
 async function shareApp(){
   const data = { title:"Dār aṣ-Ṣiddīq al-Akbar", text:"Learn your deen from the classical books, a few minutes a day. Free, and it works offline.", url:APP_URL };
-  try { if (navigator.share) { await navigator.share(data); return; } } catch(e){ if (e && e.name === "AbortError") return; }
-  try { await navigator.clipboard.writeText(APP_URL); toast("Link copied. Paste it to share."); } catch(e){ prompt("Copy this link to share the app:", APP_URL); }
+  const done = () => { if (!S.shared) { S.shared = 1; save(); setTimeout(() => toast("Milestone unlocked: Guide to good. Whoever guides to good has a reward like the one who does it."), 400); } };
+  try { if (navigator.share) { await navigator.share(data); done(); return; } } catch(e){ if (e && e.name === "AbortError") return; }
+  try { await navigator.clipboard.writeText(APP_URL); toast("Link copied. Paste it to share."); done(); } catch(e){ prompt("Copy this link to share the app:", APP_URL); }
 }
 function _wrapLines(ctx, text, maxW){ const words = String(text).split(/\s+/), lines = []; let ln = "";
   for (const w of words) { const t = ln ? ln + " " + w : w; if (ctx.measureText(t).width > maxW && ln) { lines.push(ln); ln = w; } else ln = t; } if (ln) lines.push(ln); return lines; }
@@ -3233,6 +3308,7 @@ function toolsView(){
   const row = (go, ico, t, s) => `<button class="item tool" ${go}><span class="sr-ico">${TOOL_ICON[ico]}</span><span style="min-width:0"><span class="t">${t}</span><br><span class="s">${s}</span></span><span aria-hidden="true">›</span></button>`;
   return shell(`<div class="spread"><h1>Tools</h1><button class="linkbtn small" id="hmedit">Choose home shortcuts</button></div><p class="muted" style="margin:0 0 14px">Daily worship, guides and calculators. They all work without internet.</p>
     <p class="label">Daily worship</p><div class="stack">
+      ${row('data-go="quran"', "book", "The Qur'an", "Indo-Pak script with tajweed colours, recitation and translation")}
       ${row('data-go="salawat"', "salawat", "Salawat", "Send blessings on the Prophet ﷺ, with a counter for each")}
       ${row('data-dua="daily"', "book", "Daily du'as", "Daily du'as, the du'as of the Prophets عليهم السلام and more")}
       ${row('data-go="dalail"', "book", "Dala'il al-Khayrat", "Imam al-Jazuli's daily portion of salawat")}
@@ -3264,8 +3340,7 @@ function toolsView(){
     <p class="label">Pilgrimage</p><div class="stack">
       ${row('data-guide="umrah"', "kaaba", "How to perform 'Umrah", "Step by step, with the du'a for each part")}
       ${row('data-guide="hajj"', "kaaba", "How to perform Hajj", "Tamattu', day by day, with the du'as")}</div>
-    <p class="label">Gatherings</p><div class="stack">
-      ${row('data-guide="mawlid"', "star", "A Mawlid gathering", "The order of a gathering, the description of the Prophet ﷺ, and why we gather")}</div>
+
 `);
 }
 
@@ -3854,6 +3929,7 @@ function toolsRender(app){
   else if (view.name === "mywords") app.innerHTML = myWordsView();
   else if (view.name === "bookwords") app.innerHTML = bookWordsView(view.id);
   else if (view.name === "qaida") app.innerHTML = qaidaView();
+  else if (view.name === "quran") app.innerHTML = quranView();
   else if (view.name === "mycards") app.innerHTML = myCardsView();
   else if (view.name === "stories") app.innerHTML = storiesView();
   else if (view.name === "story") app.innerHTML = STORIES ? storyView(view.id) : storiesView();
@@ -3871,7 +3947,7 @@ function toolsBind(app){
   app.querySelectorAll("[data-gstep]").forEach(b => b.onclick = () => { S.guides = S.guides || {}; const d = S.guides[view.id] = S.guides[view.id] || [], i = +b.dataset.gstep;
     const k = d.indexOf(i); if (k >= 0) d.splice(k, 1); else d.push(i); save(); const y = window.scrollY; render(); window.scrollTo(0, y); });
   const gr = $("#greset"); if (gr) gr.onclick = () => confirmBox("Clear all ticks for this guide?", () => { S.guides[view.id] = []; save(); render(); });
-  if (view.name === "qibla") bindQibla(); if (view.name === "qada") bindQada(); if (view.name === "zakat") bindZakat();
+  if (view.name === "quran") bindQuran(app); if (view.name === "qibla") bindQibla(); if (view.name === "qada") bindQada(); if (view.name === "zakat") bindZakat();
   if (view.name === "inherit") bindInherit(); if (view.name === "salawat") bindSalawat(); if (view.name === "tasbih") bindTasbih(); if (view.name === "dict") bindDict(); if (view.name === "home") { bindSalCard(); loadStories().then(() => { const el = $("#stday"), d = stOfDay(); if (!el || !d || view.name !== "home") return; el.innerHTML = `<div class="sec-row"><h2 class="sec-h">Stories</h2></div>
         <section class="st-home"><button class="st-home-hero" data-story="${d.id}" aria-label="Story of the day: ${esc(d.title)}, ${esc(d.person.replace(/[\u0600-\u06FF\s]+$/, ""))}"><img src="${artURI(d.art)}" alt="" class="st-home-img"><span class="st-home-txt"><span class="st-home-k">Story of the day</span><span class="st-home-t">${esc(d.title)}</span><span class="st-home-p">${esc(d.person)}</span></span></button>
         <div class="st-home-foot"><span class="st-home-n">The Prophet ﷺ, the Prophets عليهم السلام and the awliya</span><button class="btn small-btn st-home-all" data-go="stories">Browse all stories</button></div></section>`;
@@ -3970,9 +4046,10 @@ function wordBar(el, word, rr, ctx){
 /* A book's words, most common first: how much of the text you know, and sorting the next words into known / to learn */
 const VOCAB = {};
 async function loadVocab(file){ if (VOCAB[file]) return VOCAB[file]; try { const r = await fetch(`data/vocab/${file}.json`); VOCAB[file] = r.ok ? await r.json() : null; } catch(e){ VOCAB[file] = null; } return VOCAB[file]; }
-function vocabStats(V){ const inMW = new Set(MW().map(x => x.k)); let known = 0, learning = 0;
-  for (const [k, , n] of V.w) { if (isKnown(k)) known += n; else if (inMW.has(k)) learning += n; }
-  const next = V.w.filter(([k]) => !isKnown(k) && !inMW.has(k));
+const bwGoal = (b, V) => Math.min(V.w.length, Math.max(100, ((S.bwGoal || {})[b.file]) || Math.min(1200, V.w.length)));
+function vocabStats(V, N){ const inMW = new Set(MW().map(x => x.k)); let known = 0, learning = 0; const W = N ? V.w.slice(0, N) : V.w;
+  for (const [k, , n] of W) { if (isKnown(k)) known += n; else if (inMW.has(k)) learning += n; }
+  const next = W.filter(([k]) => !isKnown(k) && !inMW.has(k));
   return { known, learning, pct: known / V.total, pctL: (known + learning) / V.total, next }; }
 let BW = null;   // sorting session
 function bookWordsView(id){
@@ -3980,13 +4057,19 @@ function bookWordsView(id){
   const V = VOCAB[b.file]; if (V === undefined) { loadVocab(b.file).then(render); return shell(`<p class="muted">Loading the book's words…</p>`); }
   if (!V) return shell(`<button class="back" data-go="library">${ICON.back} Library</button><p class="muted">The word list for this book isn't available yet.</p>`);
   if (BW && BW.id === id && BW.q.length) return bwSortView(b, V);
-  const st = vocabStats(V), top = V.w.length, cover = V.w.reduce((a, x) => a + x[2], 0) / V.total;
+  if (view.deck) return bwDeckView(b, V);
+  const top = bwGoal(b, V), st = vocabStats(V, top), cover = V.w.slice(0, top).reduce((a, x) => a + x[2], 0) / V.total, dk = bwDeckInfo(b, V);
   return shell(`<button class="back" data-book="${b.id}">${ICON.back} ${esc(b.title)}</button><h1 style="margin-bottom:4px">Words in this book</h1>
     <p class="muted" style="margin:0 0 12px">${esc(b.title)} has ${V.total.toLocaleString()} words. Its ${top.toLocaleString()} most common words make up ${Math.round(cover * 100)}% of the text, so learning them first makes the book far easier to read.</p>
+    <section class="bw-goal"><label for="bwn" class="spread"><b>Words to learn: the ${top.toLocaleString()} most common</b><span class="small muted">${Math.round(cover * 100)}% of the text</span></label>
+      <input type="range" id="bwn" min="100" max="${V.w.length}" step="50" value="${top}" aria-label="How many of the most common words to learn"></section>
     <section class="bw-meter"><div class="spread"><b>You know ${Math.round(st.pct * 100)}% of the text</b><span class="small muted">${Math.round(st.pctL * 100)}% with the words you're learning</span></div>
       <div class="bar bw-bar"><i style="width:${st.pct * 100}%"></i><i class="l" style="width:${(st.pctL - st.pct) * 100}%"></i></div>
       <p class="small muted" style="margin:8px 0 0">Counted by how often each word appears, from the ${top.toLocaleString()} most common. Very common particles count as known.</p></section>
-    ${st.next.length ? `<button class="btn" id="bwgo" style="width:100%;margin-top:14px">Sort the next 20 words</button><p class="small muted" style="margin:6px 2px 0">For each word: say if you know it, or add it to My words to learn it as a flashcard.</p>
+    <section class="card pad bw-deck"><div class="spread"><b>Flashcard deck of these words</b><span class="small muted">${dk.left.toLocaleString()} to learn</span></div>
+      <p class="small muted" style="margin:4px 0 10px">Every word in your ${top.toLocaleString()} that you don't know yet, as its own flashcard deck. New words come in 20 at a time, and words you get right come back less often.</p>
+      <button class="btn" id="bwdeck" style="width:100%" ${dk.left || dk.due ? "" : "disabled"}>${dk.started ? `Study the deck${dk.due ? ` (${dk.due} due)` : ""}` : "Start the deck"}</button></section>
+    ${st.next.length ? `<button class="btn ghost" id="bwgo" style="width:100%;margin-top:14px">Or sort the next 20 words by hand</button><p class="small muted" style="margin:6px 2px 0">For each word: say if you know it, or add it to My words to learn it as a flashcard.</p>
       <p class="label" style="margin-top:18px">Next most common words</p><div class="bw-chips">${st.next.slice(0, 30).map(([k, f, n]) => `<span class="bw-chip"><span class="ar" lang="ar">${esc(f)}</span><span class="small muted">${n.toLocaleString()}×</span></span>`).join("")}</div>`
       : `<div class="notice">${ICON.check}<span>You've sorted all ${top.toLocaleString()} of this book's most common words.</span></div>`}
     ${MW().length ? `<button class="btn ghost" data-go="mywords" style="width:100%;margin-top:16px">Review My words</button>` : ""}`);
@@ -4000,10 +4083,14 @@ function bwSortView(b, V){
     <div class="bw-btns"><button class="btn ghost" data-bw="skip">Skip</button><button class="btn ghost" data-bw="known">I know it</button><button class="btn" data-bw="learn">Learn it</button></div>`);
 }
 async function bwPrime(){ const k = BW && BW.q[0] && BW.q[0][0]; if (!k || BW.rr[k] !== undefined) return;
-  BW.rr[k] = (await Promise.all(rootsOf(k).map(rootGet))).filter(Boolean)[0] || null; if (view.name === "bookwords") { const m = $("#bwmean"); if (m) m.textContent = mwGuess(BW.q[0][1], BW.rr[k]) || "No short meaning found: tap Look up"; } }
+  BW.rr[k] = rrPick(BW.q[0][1], (await Promise.all(rootsOf(k).map(rootGet))).filter(Boolean)); if (view.name === "bookwords") { const m = $("#bwmean"); if (m) m.textContent = mwGuess(BW.q[0][1], BW.rr[k]) || "No short meaning found: tap Look up"; } }
 function bindBookWords(app){
   const b = bookById(view.id), V = b && VOCAB[b.file]; if (!V) return;
-  const go1 = app.querySelector("#bwgo"); if (go1) go1.onclick = () => { BW = { id:b.id, q:vocabStats(V).next.slice(0, 20), rr:{}, done:0 }; render(); bwPrime(); };
+  const go1 = app.querySelector("#bwgo"); if (go1) go1.onclick = () => { BW = { id:b.id, q:vocabStats(V, bwGoal(b, V)).next.slice(0, 20), rr:{}, done:0 }; render(); bwPrime(); };
+  const rg = app.querySelector("#bwn"); if (rg) { rg.oninput = () => { const l = rg.closest(".bw-goal").querySelector("b"); l.textContent = `Words to learn: the ${(+rg.value).toLocaleString()} most common`; };
+    rg.onchange = () => { (S.bwGoal = S.bwGoal || {})[b.file] = +rg.value; save(); const y = window.scrollY; render(); window.scrollTo(0, y); }; }
+  const dkb = app.querySelector("#bwdeck"); if (dkb) dkb.onclick = () => { BWD = null; go({ name:"bookwords", id:b.id, deck:1 }); };
+  if (view.deck) bindBwDeck(app, b, V);
   const st = app.querySelector("#bwstop"); if (st) st.onclick = () => { BW = null; render(); };
   const lk = app.querySelector("#bwlook"); if (lk) lk.onclick = () => showLookup(BW.q[0][1], { b:b.id });
   app.querySelectorAll("[data-bw]").forEach(x => x.onclick = () => { const [k, f] = BW.q.shift(), a = x.dataset.bw;
@@ -4014,12 +4101,49 @@ function bindBookWords(app){
     render(); bwPrime(); });
   if (BW) bwPrime();
 }
+/* A book's words as their own flashcard deck: the unknown words of the chosen goal, 20 new at a time, spaced review */
+let BWD = null;
+const bwDeckState = b => ((S.bwd = S.bwd || {})[b.file] = S.bwd[b.file] || {});
+function bwDeckInfo(b, V){ const st = bwDeckState(b), W = V.w.slice(0, bwGoal(b, V)).filter(([k]) => !isKnown(k)), now = Date.now();
+  const started = W.some(([k]) => st[k]), due = W.filter(([k]) => st[k] && st[k][1] <= now).length, left = W.filter(([k]) => !st[k] || st[k][0] < 21).length;
+  return { started, due, left, W }; }
+function bwDeckView(b, V){
+  const st = bwDeckState(b), info = bwDeckInfo(b, V);
+  if (!BWD) { const now = Date.now(), due = info.W.filter(([k]) => st[k] && st[k][1] <= now), fresh = info.W.filter(([k]) => !st[k]).slice(0, 20);
+    BWD = { q: [...due, ...fresh].slice(0, 60), show: false, done: 0, rr: {} }; }
+  const c = BWD.q[0];
+  if (!c) { const n = BWD.done; BWD = null; return shell(`<div class="done-screen" style="min-height:50vh"><h2>Done for now</h2><p class="muted">${n} word${n === 1 ? "" : "s"} reviewed. New words and due words will be waiting next time.</p><button class="btn" data-bwback>Back to the book's words</button></div>`); }
+  const [k, f, n] = c, rr = BWD.rr[k];
+  return shell(`<button class="back" data-bwback>${ICON.back} Words in this book</button><p class="small muted" style="margin:0 0 8px">${BWD.q.length} in this session · ${info.left.toLocaleString()} still to learn</p>
+    <section class="mw-card" id="bwflip"><span class="ar mw-big" lang="ar">${esc(f)}</span><p class="small muted">Appears ${n.toLocaleString()} times in ${esc(b.title)}</p>
+      ${BWD.show ? `<p class="mw-mean" id="bwmean">${rr === undefined ? "Looking up…" : esc(mwGuess(f, rr) || "No short meaning found")}</p><button class="linkbtn small" id="bwlook">Look up in the dictionaries</button>` : `<p class="small muted">Tap to show the meaning</p>`}</section>
+    ${BWD.show ? `<div class="bw-btns"><button class="btn ghost" data-bwr="0">Again</button><button class="btn ghost" data-bwr="2">I know it well</button><button class="btn" data-bwr="1">I knew it</button></div>` : ""}`);
+}
+async function bwdPrime(){ const k = BWD && BWD.q[0] && BWD.q[0][0]; if (!k || BWD.rr[k] !== undefined) return;
+  BWD.rr[k] = rrPick(BWD.q[0][1], (await Promise.all(rootsOf(k).map(rootGet))).filter(Boolean));
+  const m = document.getElementById("bwmean"); if (m && BWD && BWD.q[0] && BWD.q[0][0] === k) m.textContent = mwGuess(BWD.q[0][1], BWD.rr[k]) || "No short meaning found"; }
+function bindBwDeck(app, b, V){
+  const st = bwDeckState(b);
+  app.querySelectorAll("[data-bwback]").forEach(x => x.onclick = () => { BWD = null; go({ name:"bookwords", id:b.id }); });
+  const f = app.querySelector("#bwflip"); if (f) f.onclick = e => { if (e.target.closest("#bwlook") || !BWD || BWD.show) return; BWD.show = true; HAPTIC(); render(); };
+  const lk = app.querySelector("#bwlook"); if (lk) lk.onclick = () => showLookup(BWD.q[0][1], { b:b.id });
+  app.querySelectorAll("[data-bwr]").forEach(x => x.onclick = () => { const c = BWD.q.shift(), k = c[0], r = x.dataset.bwr, D = 864e5, old = st[k] || [0, 0];
+    if (r === "2") { setKnown(k, true); delete st[k]; BWD.done++; }
+    else if (r === "1") { const iv = old[0] ? Math.min(120, Math.round(old[0] * 2.5)) : 1; st[k] = [iv, Date.now() + iv * D - 36e5]; BWD.done++; }
+    else { st[k] = [0, Date.now()]; BWD.q.splice(Math.min(BWD.q.length, 4), 0, c); }
+    save(); BWD.show = false; HAPTIC(); render(); });
+  bwdPrime();
+}
 /* ---- My words: Arabic words saved while reading, with their own spaced review ---- */
 const MW = () => (S.myWords = S.myWords || []);
 const mwKey = w => normAr(w).replace(/\s/g, "");
 const mwDue = () => MW().filter(x => (x.due || 0) <= Date.now());
-function mwGuess(word, rr){ if (!rr) return ""; const k = mwKey(word);
-  const n = rr.n.find(x => mwKey(x.w) === k) || rr.v.find(x => mwKey(x.pf) === k || mwKey(x.ipf || "") === k);
+function rrPick(word, list){ const kv = String(word).replace(/[\u0640\s]/g, ""), same = a => a && a.replace(/[\u0640\s]/g, "") === kv;
+  return list.find(r => r.v.some(x => same(x.pf) || same(x.ipf)) || r.n.some(x => same(x.w))) || list[0] || null; }
+function mwGuess(word, rr){ if (!rr) return ""; const k = mwKey(word), kv = String(word).replace(/[\u0640\s]/g, "");
+  const same = a => a && a.replace(/[\u0640\s]/g, "") === kv;   // a fully voweled match first (صَلَّى pray, not صَلَى roast)
+  const n = (/[\u064B-\u0652]/.test(word) && (rr.v.find(x => same(x.pf) || same(x.ipf)) || rr.n.find(x => same(x.w))))
+    || rr.n.find(x => mwKey(x.w) === k) || rr.v.find(x => mwKey(x.pf) === k || mwKey(x.ipf || "") === k);
   return ((n && n.gl) || (rr.v[0] && rr.v[0].gl) || (rr.n[0] && rr.n[0].gl) || "").split(/;\s*/)[0].replace(/\bGod\b/g, "Allah"); }
 function mwSrc(x){ const b = x.b && bookById(x.b); return b ? `${b.title}, section ${x.i + 1}` : ""; }
 function mwAddBox(box, word, rr, ctx){
@@ -4072,6 +4196,7 @@ function bindMyWords(app){
 
 /* ---- Home shortcuts: the user chooses which tools appear on the home page, and in what order ---- */
 const HOME_TOOLS = [
+  ["quran", 'data-go="quran"', () => `<span class="ar">ق</span>`, "The Qur'an", () => { const q = S.qr; return q && typeof QS_NAMES !== "undefined" ? `Continue ${QS_NAMES[q.s - 1]} ${q.s}:${q.a}` : "Read and listen, with tajweed colours"; }],
   ["salawat", 'data-go="salawat"', () => `<span class="ar">ص</span>`, "Salawat", () => "Blessings upon the Prophet ﷺ"],
   ["dalail", 'data-go="dalail"', () => `<span class="ar">د</span>`, "Dala'il al-Khayrat", () => `Part ${typeof dalailToday === "function" ? dalailToday() : 1} of 7 today`],
   ["duas", 'data-dua="daily"', () => (typeof GICO !== "undefined" && GICO.daily) || TOOL_ICON.book, "Daily du'as", () => "Morning, evening and every day"],
@@ -4099,7 +4224,8 @@ const HOME_ART = { salawat: ["oasis", "dome", "gold", 0], dalail: ["study", "mus
   zakat: ["market", "coins", "day", 0], inherit: ["study", "scale", "day", 0], dict: ["home", "bookcase", "day", 0], glossary: ["study", "bookStack", "day", 0], wudu: ["masjid", "ewer", "day", 0],
   salah: ["masjid", "rug", "day", 0], umrah: ["hijaz", "kaaba", "dusk", 0], family: ["garden", "tree", "day", 0], prophets: ["sea", "ark", "gold", 0] };
 const homeArt = id => HOME_ART[id] && typeof artURI === "function" ? `<img class="hm-img" src="${artURI(HOME_ART[id])}" alt="" decoding="async">` : "";
-const HOME_DEFAULT = ["salawat", "dalail", "duas", "tasbih", "cards", "mycards"];
+const HOME_DEFAULT = ["quran", "salawat", "dalail", "duas", "tasbih", "cards"];
+if (S.homeTiles && !S.qrTile) { if (!S.homeTiles.includes("quran")) S.homeTiles.unshift("quran"); S.qrTile = 1; save(); }
 if (S.homeTiles && !S.homeTiles.includes("mycards") && !S.mcTileAdded) { const i = S.homeTiles.indexOf("cards"); S.homeTiles.splice(i < 0 ? S.homeTiles.length : i + 1, 0, "mycards"); S.mcTileAdded = 1; }
 const homeTiles = () => (S.homeTiles || HOME_DEFAULT).map(id => HOME_TOOLS.find(x => x[0] === id)).filter(Boolean);
 function homeEdit(){
@@ -6597,7 +6723,7 @@ const LINEAGE = {
   historians: [
     ["Isma'il", "إِسْمَاعِيلُ", "A Prophet عليه السلام. He built the Ka'bah with his father and settled in Makkah, where the Arabs of the north descend from him.", 1],
     ["Ibrahim", "إِبْرَاهِيمُ", "The Friend of Allah عليه السلام, father of the Prophets عليهم السلام after him.", 1],
-    ["Azar (Tarikh)", "آزَرُ"], ["Nahur", "نَاحُورُ"], ["Sarugh", "سَارُوغُ"], ["Ra'u", "رَاعُو"], ["Falikh", "فَالِخُ"], ["'Abir", "عَابِرُ"], ["Shalikh", "شَالِخُ"],
+    ["Tarikh", "تَارَخُ", "The father of Ibrahim عليه السلام. Azar, named in the Qur'an, was his paternal uncle: an uncle is also called 'father' in Arabic, as Isma'il عليه السلام is counted among the 'fathers' of Ya'qub عليه السلام in al-Baqarah 133. Ahl al-Sunnah hold that none of the forefathers of the Prophet ﷺ was a disbeliever; Imam al-Suyuti wrote treatises proving it."], ["Nahur", "نَاحُورُ"], ["Sarugh", "سَارُوغُ"], ["Ra'u", "رَاعُو"], ["Falikh", "فَالِخُ"], ["'Abir", "عَابِرُ"], ["Shalikh", "شَالِخُ"],
     ["Arfakhshad", "أَرْفَخْشَذُ"], ["Sam", "سَامُ", "Son of Nuh عليه السلام, through whom the Arabs and many peoples descend."],
     ["Nuh", "نُوحٌ", "A Prophet and one of the five of firm resolve عليه السلام. All people after the Flood descend from him.", 1],
     ["Lamak", "لَامَكُ"], ["Mattushalakh", "مَتُّوشَلَخُ"],
@@ -6785,6 +6911,238 @@ const FAM_HON = (() => { const o = {}, f = ["Halimah al-Sa'diyyah", "Umm Ayman (
   m = ["al-Qasim", "'Ali ibn Abi al-'As", "'Abdullah ibn 'Uthman", "al-Hasan", "al-Husayn", "Muhsin", "'Abdullah (al-Tayyib, al-Tahir)", "Ibrahim"];
   f.forEach(n => o[n] = HON.f); m.forEach(n => o[n] = HON.m); return o; })();
 
+/* ======================= THE QUR'AN =======================
+   Indo-Pak script (King Fahd Complex Nastaleeq text), colour-coded tajweed worked out from the text itself,
+   recitation by verse, Pickthall's English (1930), bookmarks, juz and page navigation, and the last place read.
+   Data: data/quran/{ar,en,meta}.json */
+const QS_NAMES = ["al-Fātiḥah","al-Baqarah","Āl ʿImrān","al-Nisāʾ","al-Māʾidah","al-Anʿām","al-Aʿrāf","al-Anfāl","al-Tawbah","Yūnus","Hūd","Yūsuf","al-Raʿd","Ibrāhīm","al-Ḥijr","al-Naḥl","al-Isrāʾ","al-Kahf","Maryam","Ṭā Hā","al-Anbiyāʾ","al-Ḥajj","al-Muʾminūn","al-Nūr","al-Furqān","al-Shuʿarāʾ","al-Naml","al-Qaṣaṣ","al-ʿAnkabūt","al-Rūm","Luqmān","al-Sajdah","al-Aḥzāb","Sabaʾ","Fāṭir","Yā Sīn","al-Ṣāffāt","Ṣād","al-Zumar","Ghāfir","Fuṣṣilat","al-Shūrā","al-Zukhruf","al-Dukhān","al-Jāthiyah","al-Aḥqāf","Muḥammad","al-Fatḥ","al-Ḥujurāt","Qāf","al-Dhāriyāt","al-Ṭūr","al-Najm","al-Qamar","al-Raḥmān","al-Wāqiʿah","al-Ḥadīd","al-Mujādilah","al-Ḥashr","al-Mumtaḥanah","al-Ṣaff","al-Jumuʿah","al-Munāfiqūn","al-Taghābun","al-Ṭalāq","al-Taḥrīm","al-Mulk","al-Qalam","al-Ḥāqqah","al-Maʿārij","Nūḥ","al-Jinn","al-Muzzammil","al-Muddaththir","al-Qiyāmah","al-Insān","al-Mursalāt","al-Nabaʾ","al-Nāziʿāt","ʿAbasa","al-Takwīr","al-Infiṭār","al-Muṭaffifīn","al-Inshiqāq","al-Burūj","al-Ṭāriq","al-Aʿlā","al-Ghāshiyah","al-Fajr","al-Balad","al-Shams","al-Layl","al-Ḍuḥā","al-Sharḥ","al-Tīn","al-ʿAlaq","al-Qadr","al-Bayyinah","al-Zalzalah","al-ʿĀdiyāt","al-Qāriʿah","al-Takāthur","al-ʿAṣr","al-Humazah","al-Fīl","Quraysh","al-Māʿūn","al-Kawthar","al-Kāfirūn","al-Naṣr","al-Masad","al-Ikhlāṣ","al-Falaq","al-Nās"];
+const QREC = [["ar.husary", 128, "Maḥmūd Khalīl al-Ḥuṣarī"], ["ar.alafasy", 128, "Mishārī al-ʿAfāsī"], ["ar.minshawi", 128, "Muḥammad Ṣiddīq al-Minshāwī"],
+  ["ar.abdulbasitmurattal", 192, "ʿAbd al-Bāsiṭ ʿAbd al-Ṣamad"], ["ar.husarymujawwad", 128, "al-Ḥuṣarī (mujawwad)"], ["ar.abdurrahmaansudais", 192, "ʿAbd al-Raḥmān al-Sudays"],
+  ["ar.shaatree", 128, "Abū Bakr al-Shāṭirī"], ["ar.hudhaify", 128, "ʿAlī al-Ḥudhayfī"]];
+const TJ_RULES = [
+  ["ghunna", "Ghunnah", "A nasal sound held for two counts, on a nūn or mīm with a shaddah."],
+  ["ikhfa", "Ikhfāʾ", "A nūn sākinah or tanwīn before one of fifteen letters (ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك) is hidden: said softly through the nose, with ghunnah."],
+  ["idgham", "Idghām", "A nūn sākinah or tanwīn at the end of a word, before ي ر م ل و ن, merges into the next letter: with ghunnah before ي ن م و, without it before ل ر."],
+  ["iqlab", "Iqlāb", "A nūn sākinah or tanwīn before ب turns into a mīm, said with ghunnah. The small mīm in the text shows it."],
+  ["ikhfa-m", "Ikhfāʾ shafawī", "A mīm sākinah before ب is said softly with the lips nearly closed, with ghunnah."],
+  ["idgham-m", "Idghām shafawī", "A mīm sākinah before another mīm merges into it, with ghunnah."],
+  ["qalqala", "Qalqalah", "The letters ق ط ب ج د with a sukūn (or when you stop on them) are said with a slight bounce."]];
+let QDATA = null;
+async function loadQuran(){
+  if (QDATA) return QDATA;
+  const [ar, en, meta] = await Promise.all(["ar", "en", "meta"].map(n => fetchJSON(`data/quran/${n}.json`)));
+  return (QDATA = { ar, en, meta });
+}
+const QR = () => (S.qr = Object.assign({ s:1, a:1, tj:true, tr:false, size:2, rec:0, bm:[] }, S.qr || {}));
+const arDigits = n => String(n).replace(/\d/g, d => "٠١٢٣٤٥٦٧٨٩"[d]);
+function qJuzOf(s, a){ const J = QDATA.meta.juz; let j = 1; J.forEach(([js, ja], i) => { if (s > js || (s === js && a >= ja)) j = i + 1; }); return j; }
+function qPageOf(s, a){ const P = QDATA.meta.page; let lo = 0, hi = P.length - 1; while (lo < hi) { const m = (lo + hi + 1) >> 1, [ps, pa] = P[m]; if (s > ps || (s === ps && a >= pa)) lo = m; else hi = m - 1; } return lo + 1; }
+
+/* ---- Tajweed colours, worked out from the Indo-Pak text: each letter with its marks is a cluster ---- */
+const TJ_MARK = /[ؐ-ًؚ-ٰٟۖ-ۭ࣓-ࣿ]/;
+const TJ_VOW = /[َُِٖٗٞ]/, TJ_TAN = /[ًࣰٌࣱٍࣲ]/, TJ_SHAD = /ّ/, TJ_SUK = /[ْۡ]/;
+const TJ_LET = /[ء-يٱ-ۓ]/;
+function tjClusters(t){ const out = []; for (const ch of t) { if (out.length && TJ_MARK.test(ch)) out[out.length - 1].m += ch; else out.push({ b: ch, m: "" }); } return out; }
+function tajweed(t, lastOfAyah){
+  const C = tjClusters(t), cls = new Array(C.length).fill("");
+  const next = (i, afterTan) => { let crossed = false;
+    for (let j = i + 1; j < C.length; j++) { const c = C[j];
+      if (c.b === " ") { crossed = true; continue; }
+      if (!TJ_LET.test(c.b)) continue;
+      if (afterTan && !crossed && /[اى]/.test(c.b) && !TJ_VOW.test(c.m) && !TJ_TAN.test(c.m)) continue;   // the silent alif after fathatan
+      return { j, l: c.b, crossed }; }
+    return null; };
+  let lastLetter = -1;
+  C.forEach((c, i) => { if (TJ_LET.test(c.b)) lastLetter = i; });
+  C.forEach((c, i) => {
+    const L = c.b, M = c.m; if (!TJ_LET.test(L)) return;
+    if ((L === "ن" || L === "م") && TJ_SHAD.test(M)) { cls[i] = "ghunna"; return; }
+    const tan = TJ_TAN.test(M), nunSakin = L === "ن" && !TJ_VOW.test(M) && !tan && !TJ_SHAD.test(M) && i !== lastLetter;
+    if (tan || nunSakin) {
+      if (/[ۭۢ]/.test(M)) { cls[i] = "iqlab"; return; }
+      const n = next(i, tan && /[ًࣰ]/.test(M)); if (!n) return;
+      if (n.l === "ب") cls[i] = "iqlab";
+      else if ("يرملون".includes(n.l) && (n.crossed || tan)) cls[i] = "idgham";
+      else if ("تثجدذزسشصضطظفقك".includes(n.l)) cls[i] = "ikhfa";
+      return;
+    }
+    if (L === "م" && !TJ_VOW.test(M) && !TJ_SHAD.test(M) && i !== lastLetter) {
+      const n = next(i, false); if (!n) return;
+      if (n.l === "ب") cls[i] = "ikhfa-m"; else if (n.l === "م") cls[i] = "idgham-m";
+      return;
+    }
+    if ("قطبجد".includes(L) && (TJ_SUK.test(M) || (lastOfAyah && i === lastLetter && !TJ_SHAD.test(M)))) cls[i] = "qalqala";
+  });
+  let h = "", open = "";
+  C.forEach((c, i) => { const k = cls[i];
+    if (k !== open) { if (open) h += "</span>"; if (k) h += `<span class="tj-${k}">`; open = k; }
+    h += esc(c.b + c.m); });
+  if (open) h += "</span>";
+  return qMarks(h);
+}
+const qMarks = h => h.replace(/\u08E2/g, '<span class="q-alt" title="Some scholars count a verse ending here">\u08E2</span>');
+
+/* ---- the reader ---- */
+function quranView(){
+  if (!QDATA) { loadQuran().then(() => { if (view.name === "quran") render(); }).catch(() => { if (view.name === "quran") { $("#app").innerHTML = shell(`<button class="back" data-go="tools">${ICON.back} Tools</button><h1>The Qur'an</h1><p class="muted">The Qur'an needs an internet connection the first time it opens. After that it works offline.</p><button class="btn" id="qretry">Try again</button>`); $("#qretry").onclick = () => render(); } });
+    return shell(`<div class="done-screen" style="min-height:60vh"><div style="width:64px">${ICON.logo}</div><p class="muted">Opening the Qur'an…</p></div>`); }
+  const q = QR(), s = Math.min(114, Math.max(1, +view.s || q.s)), M = QDATA.meta.s[s - 1], A = QDATA.ar[s - 1], E = QDATA.en[s - 1];
+  const ruku = new Set(QDATA.meta.ruku[s - 1]), sajda = new Set(QDATA.meta.sajda.filter(([x]) => x === s).map(([, a]) => a));
+  const bm = new Set(q.bm.map(b => b.join(":")));
+  const ayah = (a) => { const t = A[a - 1], last = true;
+    const body = q.tj ? tajweed(t, last) : qMarks(esc(t));
+    const marks = `${sajda.has(a) && !(s === 22 && a === 77) ? `<span class="q-sajda" title="Verse of prostration">۩</span>` : ""}<span class="q-end" aria-label="verse ${a}">${arDigits(a)}</span>${ruku.has(a) ? `<span class="q-ruku" title="End of a ruku'">ع</span>` : ""}`;
+    return `<span class="qa ${bm.has(s + ":" + a) ? "bm" : ""}" data-qa="${a}" id="qa-${a}" role="button" tabindex="0">${body} ${marks}</span> `; };
+  const basm = s !== 1 && s !== 9 ? `<p class="q-basm" lang="ar">${q.tj ? tajweed("بِسۡمِ اللّٰهِ الرَّحۡمٰنِ الرَّحِيۡمِ", true) : "بِسۡمِ اللّٰهِ الرَّحۡمٰنِ الرَّحِيۡمِ"}</p>` : "";
+  const text = q.tr
+    ? A.map((t, k) => `<div class="q-row" id="qa-${k + 1}" data-qa="${k + 1}"><p class="q-ar" lang="ar" dir="rtl">${q.tj ? tajweed(t, true) : qMarks(esc(t))} <span class="q-end">${arDigits(k + 1)}</span></p><p class="q-en"><b>${s}:${k + 1}</b> ${esc(E[k])}</p></div>`).join("")
+    : `<div class="q-text" lang="ar" dir="rtl">${A.map((t, k) => ayah(k + 1)).join("")}</div>`;
+  const prev = s > 1 ? `<button class="btn ghost" data-qs="${s - 1}">${ICON.back} ${esc(QS_NAMES[s - 2])}</button>` : "<span></span>";
+  const next = s < 114 ? `<button class="btn ghost" data-qs="${s + 1}">${esc(QS_NAMES[s])} ›</button>` : "<span></span>";
+  return `<div class="qwrap q-size-${q.size}">
+    <header class="q-top"><button class="x" data-go="tools" aria-label="Close the Qur'an">${ICON.back}</button>
+      <button class="q-title" id="qgo" aria-label="Go to a surah, juz or page"><b>${esc(QS_NAMES[s - 1])}</b><span>Juz ${qJuzOf(s, 1)} · ${M[4]} verses ▾</span></button>
+      <div class="q-tools"><button class="q-tb ${q.tj ? "on" : ""}" id="qtj" aria-pressed="${q.tj}" aria-label="Tajweed colours">${QICON.tj}</button><button class="q-tb ${q.tr ? "on" : ""}" id="qtr" aria-pressed="${q.tr}" aria-label="Translation">${QICON.tr}</button><button class="q-tb" id="qsz" aria-label="Text size">${QICON.size}</button><button class="q-tb" id="qbmk" aria-label="Bookmarks">${QICON.bm}</button></div></header>
+    <main class="q-page ${q.tr ? "tr" : ""}">
+      <div class="q-head"><span class="q-head-n">${arDigits(s)}</span><span class="q-head-t" lang="ar">${esc(M[2])}</span><span class="q-head-n">${arDigits(M[4])}</span></div>
+      <p class="q-sub">${esc(QS_NAMES[s - 1])} · ${esc(M[1])} · ${M[3] === "Mecca" ? "Makki" : "Madani"}</p>
+      ${basm}${text}
+      ${q.tj ? `<button class="q-legend-btn" id="qleg">${QICON.tj} What do the colours mean?</button>` : ""}
+      <p class="q-cr">Text: King Fahd Complex Indo-Pak script. ${q.tr ? "English: Muhammad Marmaduke Pickthall (1930). " : ""}Tajweed colours are a guide; learn the rules with a teacher.</p>
+    </main>
+    <nav class="q-nav">${prev}${next}</nav>
+    <div class="q-bar" id="qbar" hidden></div></div>`;
+}
+const QICON = {
+  tj:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="#E07B00" stroke="none"/><circle cx="16" cy="8" r="3.2" fill="#1C8DB8" stroke="none"/><circle cx="8" cy="16" r="3.2" fill="#2E9E46" stroke="none"/><circle cx="16" cy="16" r="3.2" fill="#D32F2F" stroke="none"/></svg>',
+  tr:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h9M8.5 4v2c0 4-2 7-4.5 8.5M6 10c1.5 2 3.5 3.5 6 4"/><path d="M13 20l4-9 4 9M14.5 17h5"/></svg>',
+  size:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19l5-14 5 14M6 14h6"/><path d="M15 19l3-8 3 8M16 16.5h4"/></svg>',
+  bm:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+  play:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.9l12-7.5a1 1 0 0 0 0-1.7l-12-7.5A1 1 0 0 0 7 4.5z"/></svg>',
+  pause:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>',
+  prev:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 5v14l-9-7zM6 5h2v14H6z"/></svg>',
+  next:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l9-7zM16 5h2v14h-2z"/></svg>',
+  stop:'<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>',
+  rep:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="M7 22l-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg>'};
+
+/* ---- recitation: verse by verse, the next one preloaded so there is no gap ---- */
+let QA = null;
+function qAudioURL(s, a, k){ const r = QREC[QR().rec] || QREC[0], br = [r[1], 128, 64, 192][k]; return br ? `https://cdn.islamic.network/quran/audio/${br}/${r[0]}/${ayahNo(s, a)}.mp3` : null; }
+function qPlayFrom(s, a, only){
+  qAudioStop(); if (typeof stopAudio === "function") try { stopAudio(); } catch(e){}
+  QA = { s, a, only, rep: false, au: new Audio(), pre: new Audio(), k: 0, playing: true };
+  qAudioGo(); qBar();
+}
+function qAudioGo(){
+  if (!QA) return; const { s, a } = QA, au = QA.au;
+  au.src = qAudioURL(s, a, QA.k); au.play().catch(() => {});
+  document.querySelectorAll(".qa.playing, .q-row.playing").forEach(e => e.classList.remove("playing"));
+  const el = document.getElementById("qa-" + a); if (el && view.name === "quran" && (+view.s || QR().s) === s) { el.classList.add("playing"); el.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
+  const N = QDATA.meta.s[s - 1][4]; if (a < N) { QA.pre.src = qAudioURL(s, a + 1, 0); QA.pre.preload = "auto"; }
+  au.onended = () => { if (!QA) return; { const q = QR(); q.n = (q.n || 0) + 1; save(); }
+    if (QA.rep) return qAudioGo();
+    if (QA.only || a >= N) { qAudioStop(); return; }
+    QA.a = a + 1; QA.k = 0; const q = QR(); q.a = QA.a; save(); qAudioGo(); qBar(); };
+  au.onerror = () => { if (!QA) return; QA.k++; if (qAudioURL(s, a, QA.k)) qAudioGo(); else { toast(navigator.onLine ? "Couldn't play this recitation. Try another reciter." : "Recitation needs an internet connection."); qAudioStop(); } };
+}
+function qAudioStop(){ if (QA) { try { QA.au.pause(); QA.pre.src = ""; } catch(e){} } QA = null; document.querySelectorAll(".playing").forEach(e => e.classList.remove("playing")); qBar(); }
+function qBar(){
+  const b = document.getElementById("qbar"); if (!b) return;
+  if (!QA) { b.hidden = true; b.innerHTML = ""; return; }
+  const r = QREC[QR().rec] || QREC[0];
+  b.hidden = false;
+  b.innerHTML = `<div class="q-bar-in"><button class="q-rec" id="qrec"><b>${esc(QS_NAMES[QA.s - 1])} ${QA.s}:${QA.a}</b><span>${esc(r[2])} ▾</span></button>
+    <button class="q-tb" id="qprev" aria-label="Previous verse">${QICON.prev}</button><button class="q-tb main" id="qpp" aria-label="${QA.playing ? "Pause" : "Play"}">${QA.playing ? QICON.pause : QICON.play}</button>
+    <button class="q-tb" id="qnext" aria-label="Next verse">${QICON.next}</button><button class="q-tb ${QA.rep ? "on" : ""}" id="qrep" aria-pressed="${QA.rep}" aria-label="Repeat this verse">${QICON.rep}</button><button class="q-tb" id="qstop" aria-label="Stop">${QICON.stop}</button></div>`;
+  b.querySelector("#qpp").onclick = () => { if (!QA) return; if (QA.playing) { QA.au.pause(); QA.playing = false; } else { QA.au.play().catch(() => {}); QA.playing = true; } qBar(); };
+  b.querySelector("#qprev").onclick = () => { if (QA && QA.a > 1) { QA.a--; QA.k = 0; QA.playing = true; qAudioGo(); qBar(); } };
+  b.querySelector("#qnext").onclick = () => { if (QA && QA.a < QDATA.meta.s[QA.s - 1][4]) { QA.a++; QA.k = 0; QA.playing = true; qAudioGo(); qBar(); } };
+  b.querySelector("#qrep").onclick = () => { if (QA) { QA.rep = !QA.rep; qBar(); } };
+  b.querySelector("#qstop").onclick = () => qAudioStop();
+  b.querySelector("#qrec").onclick = () => qReciters();
+}
+function qReciters(){
+  const q = QR();
+  qSheet(`<h2>Reciter</h2><div class="stack">${QREC.map((r, i) => `<button class="item ${i === q.rec ? "on" : ""}" data-qrec="${i}"><span class="t">${esc(r[2])}</span>${i === q.rec ? ICON.check : ""}</button>`).join("")}</div>`,
+    d => d.querySelectorAll("[data-qrec]").forEach(b => b.onclick = () => { q.rec = +b.dataset.qrec; save(); d.remove(); if (QA) { QA.k = 0; qAudioGo(); qBar(); } }));
+}
+
+/* ---- sheets: verse actions, go to, bookmarks, colours ---- */
+function qSheet(html, bind){
+  document.querySelector(".q-sheet")?.remove();
+  const d = document.createElement("div"); d.className = "q-sheet"; d.setAttribute("role", "dialog"); d.setAttribute("aria-modal", "true");
+  d.innerHTML = `<div class="q-sheet-in"><button class="x q-sheet-x" aria-label="Close">${ICON.x}</button>${html}</div>`;
+  const prev = document.activeElement, close = () => { d.remove(); prev && prev.focus && prev.focus(); };
+  d.addEventListener("click", e => { if (e.target === d || e.target.closest(".q-sheet-x")) close(); });
+  d.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+  document.body.append(d); bind && bind(d, close); (d.querySelector("button:not(.q-sheet-x)") || d.querySelector(".q-sheet-x")).focus();
+}
+function qVerseMenu(s, a){
+  const q = QR(), on = q.bm.some(([x, y]) => x === s && y === a);
+  document.querySelectorAll(".qa.sel").forEach(e => e.classList.remove("sel")); document.getElementById("qa-" + a)?.classList.add("sel");
+  qSheet(`<p class="q-sheet-k">${esc(QS_NAMES[s - 1])} ${s}:${a}</p>
+    <p class="q-sheet-ar" lang="ar" dir="rtl">${q.tj ? tajweed(QDATA.ar[s - 1][a - 1], true) : esc(QDATA.ar[s - 1][a - 1])}</p>
+    <p class="q-sheet-en">${esc(QDATA.en[s - 1][a - 1])}<span class="small muted" style="display:block;margin-top:4px">Pickthall</span></p>
+    <div class="stack">
+      <button class="item" data-qact="from">${QICON.play}<span class="t">Play from here</span></button>
+      <button class="item" data-qact="one">${QICON.play}<span class="t">Play this verse</span></button>
+      <button class="item" data-qact="bm">${QICON.bm}<span class="t">${on ? "Remove bookmark" : "Bookmark this verse"}</span></button>
+      <button class="item" data-qact="share">${ICON.share}<span class="t">Share this verse</span></button></div>`,
+    (d, close) => d.querySelectorAll("[data-qact]").forEach(b => b.onclick = () => { const k = b.dataset.qact; close();
+      if (k === "from") qPlayFrom(s, a, false);
+      if (k === "one") qPlayFrom(s, a, true);
+      if (k === "bm") { if (on) q.bm = q.bm.filter(([x, y]) => !(x === s && y === a)); else q.bm.unshift([s, a, Date.now()]); save(); document.getElementById("qa-" + a)?.classList.toggle("bm", !on); toast(on ? "Bookmark removed" : "Bookmarked"); }
+      if (k === "share") { const t = `${QDATA.ar[s - 1][a - 1]}\n\n"${QDATA.en[s - 1][a - 1]}" (Qur'an ${s}:${a}, Pickthall)\n\n${APP_URL}`;
+        (navigator.share ? navigator.share({ text: t }).catch(() => {}) : navigator.clipboard.writeText(t).then(() => toast("Copied")).catch(() => {})); }
+    }));
+}
+function qGoTo(tab){
+  tab = tab || "s";
+  const q = QR(), filt = (view.qf || "").toLowerCase();
+  const tabs = `<div class="seg" role="tablist">${[["s", "Surah"], ["j", "Juz"], ["p", "Page"]].map(([k, l]) => `<button role="tab" class="${tab === k ? "on" : ""}" aria-selected="${tab === k}" data-qtab="${k}">${l}</button>`).join("")}</div>`;
+  let body = "";
+  if (tab === "s") body = `<input class="q-find" id="qfind" type="search" placeholder="Find a surah, e.g. Yasin or 36" aria-label="Find a surah"><div class="stack q-list" id="qslist">${QDATA.meta.s.map((m, i) => `<button class="item q-si" data-qs="${i + 1}" data-k="${norm(QS_NAMES[i] + " " + m[0] + " " + m[1] + " " + (i + 1))}"><span class="q-num">${i + 1}</span><span style="flex:1;min-width:0"><span class="t">${esc(QS_NAMES[i])}</span><span class="s" style="display:block">${esc(m[1])} · ${m[4]} verses</span></span><span class="ar q-si-ar" lang="ar">${esc(m[2].replace(/^سُوْرَةُ\s*/, ""))}</span></button>`).join("")}</div>`;
+  if (tab === "j") body = `<div class="q-grid">${QDATA.meta.juz.map(([s, a], i) => `<button class="q-cell" data-qj="${s}:${a}"><b>${i + 1}</b><span>${esc(QS_NAMES[s - 1])} ${a}</span></button>`).join("")}</div>`;
+  if (tab === "p") body = `<label class="small muted" for="qpage">Page of the Madani muṣḥaf (1 to 604)</label><div class="row" style="gap:8px;margin-top:6px"><input id="qpage" type="number" min="1" max="604" inputmode="numeric" class="q-find" style="flex:1" value="${qPageOf(+view.s || q.s, q.a)}"><button class="btn" id="qpgo" style="width:auto">Go</button></div>`;
+  qSheet(`<h2>Go to</h2>${tabs}${body}`, (d, close) => {
+    d.querySelectorAll("[data-qtab]").forEach(b => b.onclick = () => { close(); qGoTo(b.dataset.qtab); });
+    d.querySelectorAll("[data-qs]").forEach(b => b.onclick = () => { close(); qOpen(+b.dataset.qs, 1); });
+    d.querySelectorAll("[data-qj]").forEach(b => b.onclick = () => { close(); const [s, a] = b.dataset.qj.split(":").map(Number); qOpen(s, a); });
+    const f = d.querySelector("#qfind"); if (f) f.oninput = () => { const v = norm(f.value).trim(); d.querySelectorAll(".q-si").forEach(x => x.hidden = v && !x.dataset.k.includes(v)); };
+    const pg = d.querySelector("#qpgo"); if (pg) pg.onclick = () => { const n = Math.min(604, Math.max(1, +d.querySelector("#qpage").value || 1)), [s, a] = QDATA.meta.page[n - 1]; close(); qOpen(s, a); };
+  });
+}
+function qBookmarks(){
+  const q = QR();
+  qSheet(`<h2>Bookmarks</h2>${q.last ? "" : ""}<button class="item" data-qb="${q.s}:${q.a}"><span class="t">Where you left off</span><span class="s">${esc(QS_NAMES[q.s - 1])} ${q.s}:${q.a}</span></button>
+    ${q.bm.length ? `<div class="stack" style="margin-top:8px">${q.bm.map(([s, a]) => `<button class="item" data-qb="${s}:${a}"><span style="flex:1;min-width:0"><span class="t">${esc(QS_NAMES[s - 1])} ${s}:${a}</span><span class="s" style="display:block">${esc(snip(QDATA.en[s - 1][a - 1], 90))}</span></span></button>`).join("")}</div>` : `<p class="muted small">Tap a verse and choose "Bookmark this verse" to keep it here.</p>`}`,
+    (d, close) => d.querySelectorAll("[data-qb]").forEach(b => b.onclick = () => { close(); const [s, a] = b.dataset.qb.split(":").map(Number); qOpen(s, a); }));
+}
+function qLegend(){
+  qSheet(`<h2>Tajweed colours</h2><p class="small muted" style="margin:0 0 10px">The coloured letter shows where a rule applies. Learn each rule properly with a teacher; the colours are a reminder.</p>
+    <div class="q-leg">${TJ_RULES.map(([k, n, d]) => `<div class="q-leg-row"><span class="q-leg-dot tj-${k}-bg"></span><div><b class="tj-${k}">${n}</b><p>${d}</p></div></div>`).join("")}</div>
+    <button class="btn ghost" data-go-qd style="margin-top:10px">Learn to read in the Qa'idah</button>`, (d, close) => { const b = d.querySelector("[data-go-qd]"); if (b) b.onclick = () => { close(); go({ name: "qaida" }); }; });
+}
+function qOpen(s, a){
+  const q = QR(); q.s = s; q.a = a || 1; save();
+  go({ name: "quran", s }); setTimeout(() => { const el = document.getElementById("qa-" + (a || 1)); if (el && a > 1) { el.scrollIntoView({ block: "center" }); el.classList.add("sel"); setTimeout(() => el.classList.remove("sel"), 1600); } else window.scrollTo(0, 0); }, 60);
+}
+function bindQuran(app){
+  if (!QDATA) return;
+  const q = QR(), s = +view.s || q.s;
+  app.querySelectorAll("[data-qa]").forEach(el => { const open = () => { q.s = s; q.a = +el.dataset.qa; save(); qVerseMenu(s, +el.dataset.qa); };
+    el.onclick = open; el.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } }; });
+  app.querySelectorAll(".q-nav [data-qs]").forEach(b => b.onclick = () => qOpen(+b.dataset.qs, 1));
+  const t = (id, f) => { const b = app.querySelector(id); if (b) b.onclick = f; };
+  t("#qgo", () => qGoTo("s")); t("#qbmk", qBookmarks); t("#qleg", qLegend);
+  t("#qtj", () => { q.tj = !q.tj; save(); const y = window.scrollY; render(); window.scrollTo(0, y); });
+  t("#qtr", () => { q.tr = !q.tr; save(); render(); setTimeout(() => document.getElementById("qa-" + q.a)?.scrollIntoView({ block: "center" }), 40); });
+  t("#qsz", () => { q.size = q.size % 4 + 1; save(); const y = window.scrollY; render(); window.scrollTo(0, y); });
+  app.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { qAudioStop(); go({ name: b.dataset.go }); });
+  qBar();
+  if (QA && QA.s === s) document.getElementById("qa-" + QA.a)?.classList.add("playing");
+}
+
 </script>
-<script>if("serviceWorker" in navigator && /github\.io$/.test(location.hostname)) navigator.serviceWorker.register("sw.js?v=c9290a2ebc");</script></body>
+<script>if("serviceWorker" in navigator && /github\.io$/.test(location.hostname)) navigator.serviceWorker.register("sw.js?v=7ec76a30ab");</script></body>
 </html>
